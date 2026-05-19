@@ -11,7 +11,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/yourusername/yourrepo.git'
+                git 'https://github.com/khogare/AutomatioExcercise_Website.git'
             }
         }
 
