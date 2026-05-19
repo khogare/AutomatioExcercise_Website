@@ -32,12 +32,15 @@ pipeline {
     post {
 
         always {
-
+        /*
             // Publish TestNG Results
             publishTestNGResults testResultsPattern: 'target/surefire-reports/testng-results.xml'
 
             // Archive reports
-            archiveArtifacts artifacts: 'target/surefire-reports/*.*', fingerprint: true
+            archiveArtifacts artifacts: 'target/surefire-reports/*.*', fingerprint: true*/
+            
+                        junit 'target/surefire-reports/*.xml'
+
         }
     }
 }
